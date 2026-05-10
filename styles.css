@@ -175,3 +175,48 @@ footer a:hover {
   0%, 100% { transform: scale(0.5); opacity: 0; }
   50% { transform: scale(1); opacity: 0.2; }
 }
+
+@media (max-width: 768px) {
+  body {
+    align-items: flex-start;
+    padding-top: 80px;
+  }
+
+  #wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #app {
+    width: 100%;
+    padding: 60px 24px 40px;
+  }
+
+  #avatar-container {
+    top: -45px;
+    right: 10px;
+  }
+
+  #avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  #mood-value {
+    font-size: 4.5rem
+  }
+
+  #mood-label {
+    font-size: 0.9rem;
+    letter-spacing: 4px;
+  }
+
+  #mood-message {
+    font-size: 0.95rem;
+  }
+
+  footer {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+}
