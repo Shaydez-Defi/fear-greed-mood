@@ -63,12 +63,14 @@ const fetchMood = async () => {
       document.getElementById('avatar-container').style.opacity = '1';
       document.getElementById('mood-board').style.opacity = '1';
     }, 50);
+
+    console.log(value, classification, timestamp);
+
+
   } catch (error) {
     document.getElementById('loading').innerText = "well, looks like waleswoosh is screenshotting, try again when he's done"
   }
   
-
-  console.log(value, classification, timestamp);
 }
 
 document.getElementById('refresh-btn').addEventListener('click', fetchMood);
