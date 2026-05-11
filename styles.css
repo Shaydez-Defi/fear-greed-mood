@@ -30,16 +30,17 @@ body {
 }
 
 #avatar-container {
-  position: absolute;
-  right: calc(50% - 300px);
+  position: relative;
   transition: opacity 0.5s ease;
   z-index: 0;
+  align-self: flex-end;
+  margin-bottom: -50px;
+  margin-right: 10px;
 }
 
 #avatar {
   width: 90px;
   height: 90px;
-  position: relative;
   display: block;
   bottom: -0.5rem;
   border-radius: 0%;
@@ -211,7 +212,7 @@ footer a:hover {
   }
 
   #mood-message {
-    font-size: 1.05rem;
+    font-size: 0.99rem;
   }
 
   #refresh-btn {
