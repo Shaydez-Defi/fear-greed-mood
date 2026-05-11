@@ -14,7 +14,7 @@ body {
   color: white;
   transition: background-color 0.8s ease;
   background-image: radial-gradient(
-    eclipse at center,
+    ellipse at center,
     rgba(255, 255, 255, 0.03) 0%,
     transparent 70%
   );
@@ -26,25 +26,24 @@ body {
   align-items: center;
   width: 100%;
   padding: 20px;
+  position: relative;
 }
 
 #avatar-container {
   position: absolute;
-  top: -45px;
-  right: -15px;
-  z-index: 0;
+  right: calc(50% - 300px);
   transition: opacity 0.5s ease;
+  z-index: 0;
 }
 
 #avatar {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   position: relative;
+  display: block;
   bottom: -0.5rem;
-  border-radius: 50%;
+  border-radius: 0%;
   object-fit: cover;
-  justify-self: flex-end;
-  z-index: 0;
 }
 
 #app {
@@ -61,7 +60,6 @@ body {
   box-shadow: 
     0 0 60px rgba(255, 255, 255, 0.03),
     inset 0 0 40px rgba(255, 255, 255, 0.01);
-  z-index: 100;
 }
 
 #loading {
@@ -153,6 +151,7 @@ footer span {
 footer a {
   color: white;
   text-decoration: none;
+  opacity: 1;
   transition: opacity 0.3s ease;
 }
 
@@ -178,7 +177,7 @@ footer a:hover {
 @media (max-width: 768px) {
   body {
     align-items: center;
-    padding: 60px 20px;
+    padding: 20px;
   }
 
   #wrapper {
@@ -203,16 +202,20 @@ footer a:hover {
   }
 
   #mood-value {
-    font-size: 4.5rem
+    font-size: 5.5rem
   }
 
   #mood-label {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     letter-spacing: 4px;
   }
 
   #mood-message {
-    font-size: 0.95rem;
+    font-size: 1.05rem;
+  }
+
+  #refresh-btn {
+    padding: 16px;
   }
 
   footer {
